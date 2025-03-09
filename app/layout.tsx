@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { ClerkProvider } from "@clerk/nextjs";
-import { Toaster } from "@/components/ui/sonner";
-
-import "@stream-io/video-react-sdk/dist/css/styles.css";
-import "react-datepicker/dist/react-datepicker.css"
+import { Analytics } from '@vercel/analytics/next';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
   subsets: ["latin"],
 });
 
@@ -25,33 +26,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  
   return (
     <html lang="en">
-      <ClerkProvider appearance={{
-          layout: {
-            socialButtonsVariant: "iconButton",
-            logoImageUrl: "/icons/stem-logo.png",
-          },
-          elements: {
-            logoImage: { width: "150px", height: "150px" }, // Increase width & height (adjust as needed)
-          },
-          variables: {
-            colorText: "#fff",
-            colorPrimary: "#0E78F9",
-            colorBackground: "#1E293B",
-            colorInputBackground: "#334155",
-            colorInputText: "#fff",
-          },
-        }}>
       <body
-        className={`${geistSans} bg-[#161925]`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
-
-        <Toaster />
+        <Analytics />
       </body>
-      </ClerkProvider>
     </html>
   );
 }

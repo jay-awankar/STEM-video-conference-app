@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 /* 
 dark-1 >> #1C1F2E
 dark-2 >> #161925
@@ -40,6 +41,13 @@ sky-3  >> #F5FCFF
 
 .cl-internal-1ftpdtb {
   background-color: #334155;
+=======
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+>>>>>>> Stashed changes
 }
 
 @theme inline {
@@ -47,6 +55,7 @@ sky-3  >> #F5FCFF
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+<<<<<<< Updated upstream
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -162,3 +171,19 @@ sky-3  >> #F5FCFF
     @apply bg-background text-foreground;
   }
 }
+=======
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+>>>>>>> Stashed changes

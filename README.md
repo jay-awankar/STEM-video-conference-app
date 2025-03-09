@@ -38,6 +38,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 npx create-next-app@latest ./ --typescript --tailwind --eslint
 
+<<<<<<< Updated upstream
 npx shadcn@latest init
 npx shadcn@latest add button
 npx shadcn@latest add sheet
@@ -45,3 +46,5 @@ npx shadcn@latest add sheet
 npm install @clerk/nextjs
 .env.local -> ClerkProvider
 add middleware
+=======
+>>>>>>> Stashed changes
