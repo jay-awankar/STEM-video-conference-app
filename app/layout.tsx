@@ -3,8 +3,10 @@ import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "@/components/ui/sonner";
+// import { useRouter } from "next/navigation";
 
 import "@stream-io/video-react-sdk/dist/css/styles.css";
+import "react-datepicker/dist/react-datepicker.css"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,7 +22,7 @@ export const metadata: Metadata = {
   title: "STEM",
   description: "Video Calling App",
   icons: {
-    icon: '/icons.logo.svg'
+    icon: '/icons.logo.png'
   }
 };
 
@@ -31,12 +33,16 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  
   return (
     <html lang="en">
       <ClerkProvider appearance={{
           layout: {
             socialButtonsVariant: "iconButton",
-            logoImageUrl: "/icons/yoom-logo.svg",
+            logoImageUrl: "/icons/stem-logo.png",
+          },
+          elements: {
+            logoImage: { width: "150px", height: "150px" }, // Increase width & height (adjust as needed)
           },
           variables: {
             colorText: "#fff",
@@ -47,9 +53,10 @@ export default function RootLayout({
           },
         }}>
       <body
-        className={`${geistSans} bg-slate-900`}
+        className={`${geistSans} bg-[#161925]`}
       >
         {children}
+
         <Toaster />
       </body>
       </ClerkProvider>

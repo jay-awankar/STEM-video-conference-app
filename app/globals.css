@@ -1,3 +1,19 @@
+/* 
+dark-1 >> #1C1F2E
+dark-2 >> #161925
+dark-3 >> #252A41
+dark-4 >> #1E2757
+
+blue   >> #0E78F9
+orange >> #FF742E
+purple >> #830EF9
+yellow >> #F9A90E
+
+sky-1  >> #C9DDFF
+sky-2  >> #ECF0FF
+sky-3  >> #F5FCFF
+*/
+
 @import "tailwindcss";
 
 @plugin "tailwindcss-animate";
@@ -12,6 +28,10 @@
   .flex-between {
     @apply flex justify-between items-center;
   }
+}
+
+.cl-internal-1iv0hw5 {
+  color: #fff
 }
 
 .cl-providerIcon__github {

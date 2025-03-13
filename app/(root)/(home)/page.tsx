@@ -1,7 +1,22 @@
+"use client"
+
 import MeetingTypeList from '@/components/MeetingTypeList';
-import React from 'react'
+import { useAuth } from '@clerk/nextjs';
+import { useRouter } from 'next/navigation';
+import React, { useEffect } from 'react'
 
 const Home = () => {
+
+  const {isLoaded, isSignedIn } = useAuth()
+  const router = useRouter()
+
+  useEffect(() => {
+    if(isLoaded &&!isSignedIn){
+      router.replace("/sign-in")
+    }
+  }, [isLoaded, isSignedIn, router])
+
+  if (!isLoaded ||!isSignedIn) return null;
 
   const now = new Date();
 
@@ -17,7 +32,7 @@ const Home = () => {
           </h2>
           <div className="flex flex-col gap-2">
             <h1 className="text-4xl font-extrabold lg:text-7xl">{time}</h1>
-            <p className="text-lg font-medium text-sky-1 lg:text-2xl">{date}</p>
+            <p className="text-lg font-medium text-[#C9DDFF] lg:text-2xl">{date}</p>
           </div>
         </div>
       </div>

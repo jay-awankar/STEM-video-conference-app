@@ -8,10 +8,10 @@ import { SignedIn, UserButton } from '@clerk/nextjs';
 
 const Navbar = () => {
   return (
-    <nav className="flex-between fixed z-50 w-full bg-slate-800 px-6 py-4 lg:px-10">
+    <nav className="flex-between fixed z-50 w-full bg-[#1C1F2E] px-6 py-4 lg:px-10">
       <Link href="/" className="flex items-center gap-1">
         <Image
-          src="/icons/logo.svg"
+          src="/icons/logo.png"
           width={32}
           height={32}
           alt="STEM logo"
@@ -23,7 +23,15 @@ const Navbar = () => {
       </Link>
       <div className="flex-between gap-5">
         <SignedIn>
-          <UserButton />
+          <UserButton 
+            afterSignOutUrl="/sign-in"
+            appearance={{
+              variables: {
+                colorPrimary: 'blue',
+                colorText: 'white'
+              }
+            }}
+          />
         </SignedIn>
 
         <MobileNav />

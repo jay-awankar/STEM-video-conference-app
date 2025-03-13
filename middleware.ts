@@ -10,8 +10,9 @@ const protectedRoute = createRouteMatcher([
   "/personal-room",
 ]);
 
-export default clerkMiddleware((auth, req) => {
-  const userId = auth(); // ✅ auth() does NOT have a .protect() function
+
+export default clerkMiddleware( async (auth, req) => {
+  const userId = await auth(); // ✅ auth() does NOT have a .protect() function
 
   if (protectedRoute(req) && !userId) {
     return NextResponse.redirect(new URL("/sign-in", req.url)); // Redirect to sign-in page if not authenticated
