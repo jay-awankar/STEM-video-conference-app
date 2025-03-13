@@ -1,22 +1,7 @@
-"use client"
-
 import MeetingTypeList from '@/components/MeetingTypeList';
-import { useAuth } from '@clerk/nextjs';
-import { useRouter } from 'next/navigation';
-import React, { useEffect } from 'react'
+import React from 'react'
 
 const Home = () => {
-
-  const {isLoaded, isSignedIn } = useAuth()
-  const router = useRouter()
-
-  useEffect(() => {
-    if(isLoaded &&!isSignedIn){
-      router.replace("/sign-in")
-    }
-  }, [isLoaded, isSignedIn, router])
-
-  if (!isLoaded ||!isSignedIn) return null;
 
   const now = new Date();
 

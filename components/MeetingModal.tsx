@@ -1,18 +1,12 @@
 import React from 'react'
-
 import {
     Dialog,
     DialogContent,
-    
-    
     DialogTitle,
-    
   } from "@/components/ui/dialog"
 import Image from 'next/image';
 import { cn } from '@/lib/utils';
 import { Button } from './ui/button';
-  
-
 interface MeetingModalProps {
     isOpen: boolean;
     onClose: () => void;
@@ -21,9 +15,7 @@ interface MeetingModalProps {
     children?: React.ReactNode;
     handleClick?: () => void;
     buttonText?: string;
-    instantMeeting?: boolean;
     image?: string;
-    buttonClassName?: string;
     buttonIcon?: string;
   }
 
@@ -35,9 +27,7 @@ const MeetingModal = ({
     children,
     handleClick,
     buttonText,
-    instantMeeting,
     image,
-    buttonClassName,
     buttonIcon,
   }: MeetingModalProps) => {
   return (
@@ -71,7 +61,6 @@ const MeetingModal = ({
         </div>
     </DialogContent>
     </Dialog>
-
   )
 }
 
