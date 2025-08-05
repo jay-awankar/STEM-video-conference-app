@@ -73,7 +73,11 @@ const MeetingRoom = () => {
               <LayoutList size={20} className="text-white" />
             </DropdownMenuTrigger>
           </div>
+<<<<<<< HEAD
           <DropdownMenuContent className="border-[#1C1F2E] bg-[#1C1F2E] text-white">
+=======
+          <DropdownMenuContent className="border-slate-800 bg-slate-800 text-white">
+>>>>>>> c33ccb5 (Part-1)
             {['Grid', 'Speaker-Left', 'Speaker-Right'].map((item, index) => (
               <div key={index}>
                 <DropdownMenuItem
@@ -83,7 +87,11 @@ const MeetingRoom = () => {
                 >
                   {item}
                 </DropdownMenuItem>
+<<<<<<< HEAD
                 <DropdownMenuSeparator className="border-[#1C1F2E] bg-border-[#1C1F2E]" />
+=======
+                <DropdownMenuSeparator className="border-slate-800 bg-border-slate-800" />
+>>>>>>> c33ccb5 (Part-1)
               </div>
             ))}
           </DropdownMenuContent>

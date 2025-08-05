@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 import CallList from '@/components/CallList'
+=======
+>>>>>>> c33ccb5 (Part-1)
 import React from 'react'
 
 const Previous = () => {
@@ -7,8 +10,11 @@ const Previous = () => {
       <h1 className='text-3xl font-bold'>
         Previous
       </h1>
+<<<<<<< HEAD
 
       <CallList type='ended' />
+=======
+>>>>>>> c33ccb5 (Part-1)
     </section>
   )
 }

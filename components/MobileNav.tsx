@@ -23,10 +23,17 @@ const MobileNav = () => {
             className="cursor-pointer sm:hidden"
           />
         </SheetTrigger>
+<<<<<<< HEAD
         <SheetContent side="left" className="border-none bg-[#1C1F2E]">
           <Link href="/" className="flex items-center gap-1 p-2">
             <Image
               src="/icons/logo.png"
+=======
+        <SheetContent side="left" className="border-none bg-slate-800">
+          <Link href="/" className="flex items-center gap-1 p-2">
+            <Image
+              src="/icons/logo.svg"
+>>>>>>> c33ccb5 (Part-1)
               width={32}
               height={32}
               alt="STEM logo"

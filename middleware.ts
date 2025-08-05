@@ -10,6 +10,7 @@ const protectedRoute = createRouteMatcher([
   "/personal-room",
 ]);
 
+<<<<<<< HEAD
 export default clerkMiddleware( async (auth, req) => {
   const {userId} = await auth();
   if (protectedRoute(req)){ 
@@ -17,6 +18,16 @@ export default clerkMiddleware( async (auth, req) => {
       return NextResponse.redirect(new URL("/sign-in", req.url));
     }
   }
+=======
+export default clerkMiddleware((auth, req) => {
+  const userId = auth(); // ✅ auth() does NOT have a .protect() function
+
+  if (protectedRoute(req) && !userId) {
+    return NextResponse.redirect(new URL("/sign-in", req.url)); // Redirect to sign-in page if not authenticated
+  }
+
+  return NextResponse.next();
+>>>>>>> c33ccb5 (Part-1)
 });
 
 export const config = {

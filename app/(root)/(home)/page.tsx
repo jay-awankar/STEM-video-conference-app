@@ -17,7 +17,11 @@ const Home = () => {
           </h2>
           <div className="flex flex-col gap-2">
             <h1 className="text-4xl font-extrabold lg:text-7xl">{time}</h1>
+<<<<<<< HEAD
             <p className="text-lg font-medium text-[#C9DDFF] lg:text-2xl">{date}</p>
+=======
+            <p className="text-lg font-medium text-sky-1 lg:text-2xl">{date}</p>
+>>>>>>> c33ccb5 (Part-1)
           </div>
         </div>
       </div>

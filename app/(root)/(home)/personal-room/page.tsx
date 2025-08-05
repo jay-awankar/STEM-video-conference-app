@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "use client";
 
 import { useUser } from "@clerk/nextjs";
@@ -81,3 +82,18 @@ const PersonalRoom = () => {
 };
 
 export default PersonalRoom;
+=======
+import React from 'react'
+
+const PersonalRoom = () => {
+  return (
+    <section className='flex size-full flex-col gap-10 text-white'>
+      <h1 className='text-3xl font-bold'>
+      PersonalRoom
+      </h1>
+    </section>
+  )
+}
+
+export default PersonalRoom
+>>>>>>> c33ccb5 (Part-1)
