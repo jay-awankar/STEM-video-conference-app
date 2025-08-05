@@ -1,3 +1,6 @@
+[https://stem-git-master-jay-awankars-projects.vercel.app]
+[https://stem-agwuy0ktn-jay-awankars-projects.vercel.app]
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -38,20 +41,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 npx create-next-app@latest ./ --typescript --tailwind --eslint
 
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
->>>>>>> c33ccb5 (Part-1)
 npx shadcn@latest init
 npx shadcn@latest add button
 npx shadcn@latest add sheet
 
 npm install @clerk/nextjs
 .env.local -> ClerkProvider
-<<<<<<< HEAD
-add middleware
-=======
->>>>>>> Stashed changes
-=======
-add middleware
->>>>>>> c33ccb5 (Part-1)
