@@ -2,10 +2,13 @@
 
 A web-based video conferencing platform built with Next.js, designed for STEM collaboration and real-time communication.
 
-## 🚀 Demo
+## 🚀 Live
 
 - [Live App Deployment 1](https://stem-git-master-jay-awankars-projects.vercel.app)
 - [Live App Deployment 2](https://stem-agwuy0ktn-jay-awankars-projects.vercel.app)
+
+## Preview
+<img src="public/images/Screenshot%202025-08-08%20121646.png" alt="HomePreview" width="700" />
 
 ## ✨ Features
 
