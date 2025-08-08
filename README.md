@@ -1,12 +1,49 @@
-[https://stem-git-master-jay-awankars-projects.vercel.app]
-[https://stem-agwuy0ktn-jay-awankars-projects.vercel.app]
+# STEM Video Conference App
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+A web-based video conferencing platform built with Next.js, designed for STEM collaboration and real-time communication.
 
-## Getting Started
+## 🚀 Demo
 
-First, run the development server:
+- [Live App Deployment 1](https://stem-git-master-jay-awankars-projects.vercel.app)
+- [Live App Deployment 2](https://stem-agwuy0ktn-jay-awankars-projects.vercel.app)
 
+## ✨ Features
+
+- Modern collaborative video conferencing tailored for STEM fields
+- Built with the power of **Next.js** 14+ and TypeScript
+- Uses **Tailwind CSS** for fast and responsive UI styling
+- Auth with [Clerk](https://clerk.com/) integration
+- Easily customizable and extendable for new features
+
+## 🏁 Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine.
+
+### Prerequisites
+
+- **Node.js** v18+ recommended
+- **npm**, **yarn**, **pnpm**, or **bun** package manager
+
+### Installation
+
+1. Clone the repository:
+
+
+2. Install dependencies:
+```bash
+npm i
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
+
+
+3. Create a `.env.local` file using the provided `.env.example` and set up your Clerk authentication keys.
+
+4. Run the development server:
 ```bash
 npm run dev
 # or
@@ -17,33 +54,40 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+5. Open [http://localhost:3000](http://localhost:3000) to view the app in your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Editing
 
-## Learn More
+Edit `app/page.tsx` or other source files. The app supports fast refresh and will auto-update as you make changes.
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Built With
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Clerk](https://clerk.com/) (Authentication)
+- [shadcn/ui](https://ui.shadcn.com/) for UI components
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📚 Learn More
 
-## Deploy on Vercel
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Next.js GitHub](https://github.com/vercel/next.js/)
+- [shadcn/ui Docs](https://ui.shadcn.com/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🌐 Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Deploy the app easily on [Vercel](https://vercel.com/):
+
+- Push your repository to GitHub.
+- Connect to Vercel and follow the instructions to deploy.
+- [Deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying)
 
 
-npx create-next-app@latest ./ --typescript --tailwind --eslint
+## 🤝 Contributing
 
-npx shadcn@latest init
-npx shadcn@latest add button
-npx shadcn@latest add sheet
+- Pull requests are welcome! For significant changes, open an issue to discuss what you would like to change.
+- Please consider following [conventional commits](https://www.conventionalcommits.org/) for commit messages.
 
 npm install @clerk/nextjs
 .env.local -> ClerkProvider
