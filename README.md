@@ -1,4 +1,4 @@
-# STEM Video Conference App
+# <img src="public/icons/logo.png" width="30" /> STEM Video Conference App
 
 A web-based video conferencing platform built with Next.js, designed for STEM collaboration and real-time communication.
 
